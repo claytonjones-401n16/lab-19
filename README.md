@@ -8,20 +8,27 @@
 
 ### Setup  
   
-#### How to initialize/run your application (where applicable)
-Open three (3) terminal windows  
-Navigate to /csps, /vendor, and /driver, one in each terminal
+#### How to initialize/run the application
+Open terminal.  
+Navigate to root folder  
+`npm i` inside root THEN  
+Open three (3) additional terminal windows  
 
-`npm i` inside root and /vendor THEN   
-`npm start` in each terminal in this order:
-1. csps
-2. driver
-3. vendor
+Run each of the following commands in seperate terminals:  
   
-#### Tests  
+1. `npm run start-queue`
+2. `npm run start-api`
+3. `npm run start-vendor-01`
+4. `npm run start-vendor-02`  
+  
+Steps 3 and 4 are interchangable  
 
-No tests available
+In Postman/Insomnia or other similar tool test the following endpoints on `http://localhost:3000`:  
 
-#### UML  
+* POST /delivery/flower-shop/:orderid
+* POST /delivery/candy-shop/:orderid
 
-![lab 18 UML](./assets/lab-17.png)
+
+#### Lab UML  
+
+![lab 19 UML](./assets/messageQ.png)
