@@ -1,7 +1,16 @@
 'use strict';
 
 
-// modularized function for vendors to utilize
+/**
+ * Modularized vendor functions to be used by individual vendor applications
+ *
+ * @param {object} socket - A socket.io socket client
+ * @param {string} store - The name of the vendor
+ *
+ * @example
+ *
+ *     vendor(socket, 'flower-shop)
+ */
 
 function vendor (socket, store) {
   socket.emit('subscribe', store);
