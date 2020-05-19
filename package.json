@@ -1,0 +1,36 @@
+{
+  "name": "lab-16",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "start-queue": "node queue-server.js",
+    "start-api": "node api.js",
+    "start-vendor-01": "node vendor-01.js",
+    "start-vendor-02": "node vendor-02.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claytonjones-401n16/lab-16.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claytonjones-401n16/lab-16/issues"
+  },
+  "homepage": "https://github.com/claytonjones-401n16/lab-16#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "jest": "^26.0.1",
+    "morgan": "^1.10.0",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0"
+  }
+}
